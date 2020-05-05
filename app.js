@@ -9,6 +9,7 @@ const helpexampleEmbed = new Discord.MessageEmbed()
  
 client.on("ready", () => {
 	console.log("ready")
+	client.user.setActivity('도움말 : ?help', {type: "PLAYING"})
 })
 
 client.on('message', message => {
