@@ -15,14 +15,11 @@ client.on("ready", () => {
 client.on('message', message => {
 	if(message.channel.type == 'dm'){
         return
-    }
-    if (!message.content.startsWith(PREFIX)){
+    }if (!message.content.startsWith(PREFIX)){
         return
-    }
-    if (!message.guild){
+    }if (!message.guild){
         return
-    }
-    if(message.author.bot){
+    }if(message.author.bot){
         return
 	}
 	let command = message.content.substring(PREFIX.length)
